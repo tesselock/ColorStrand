@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* creates an instance of the component by wrapping it in JSX */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')
