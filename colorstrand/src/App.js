@@ -1,8 +1,10 @@
 
 import './App.css';
+import Item from './Item';
 //this is a component that holds all the other componentsd
 function App() {
   const varss = "trisaaa";
+  //use curly braces to use javascript variables in JSX
   const styles = {
     backgroundColor: "blue"
     // if there is supposed to be a dash like background-color, change it to 
@@ -12,11 +14,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 style = {styles}>hello {varss} is me</h1>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
+        <Item name="placeholder"/> 
+        {/* name is the first prop */}
       </header>
     </div>
   );
