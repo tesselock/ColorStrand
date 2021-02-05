@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 style = {styles}>hello {varss} is me</h1>
-        <Item name="placeholder"/> 
+        <Item name="placeholder" lastname="kek"/> 
+        <Item name="diff"/>
+        <Item name= "number23"/>
         {/* name is the first prop */}
       </header>
     </div>

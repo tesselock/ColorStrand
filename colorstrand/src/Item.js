@@ -1,13 +1,12 @@
 
 function Item(props){
-    console.log(props)
+    
     return(
         <div>
         <input type= "checkbox"/>
-        <p>same lull {props.name}</p>
-        {/* props.name took in the data that was passed in (pretty much ar
-            bituary variables that u declare in app.js
-            and pasted it here) */}
+        <p style = {{color: props.lastname ? "red" : "black"}}> first p {props.name}</p>
+        <p style = {{display: props.lastname ? "block" : "none"}}> second p {props.lastname}</p>
+        {/* if it doesnt exist, have it not display */}
         </div>
         //props: pass in data within html ?? 
     )
