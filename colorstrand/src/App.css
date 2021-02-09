@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  color: red;
-  background-color: whitesmoke;
+  color: white;
+  border-radius:50px;
+  margin: auto;
+  width: 50%;
+  background-color: rgb(179, 163, 224);
 }
 

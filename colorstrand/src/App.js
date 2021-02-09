@@ -1,12 +1,20 @@
 
 import './App.css';
 import Item from './Item';
+import fakeData from './fakeData';
 //this is a component that holds all the other componentsd
 function App() {
+ const datacomp= fakeData.map(d => {
+   return (<Item name={d.name} email={d.email} />)
+ })
+
+
   const varss = "trisaaa";
   //use curly braces to use javascript variables in JSX
   const styles = {
-    backgroundColor: "blue"
+    backgroundColor: "#d8dde6",
+    width : "30%",
+    margin: "auto"
     // if there is supposed to be a dash like background-color, change it to 
     //camelcase
   }
@@ -15,8 +23,7 @@ function App() {
       <header className="App-header">
         <h1 style = {styles}>hello {varss} is me</h1>
         <Item name="placeholder" lastname="kek"/> 
-        <Item name="diff"/>
-        <Item name= "number23"/>
+        {datacomp}
         {/* name is the first prop */}
       </header>
     </div>
