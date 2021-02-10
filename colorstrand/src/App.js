@@ -38,12 +38,22 @@ class App extends Component{
     //initializes part of the class
     super()
     this.state = {
-      answer: "yes"
+      //write if statement here?
+      todos: fakeData,
+      answer: "yes",
+      isTrue: false
     }
   }
   render()
   {
-    const datacomp= fakeData.map(d => {
+    var vafr = "";
+    if (this.state.isTrue === true){
+      vafr = "yes";
+    }
+    else{
+      vafr = "no";
+    }
+    const datacomp= this.state.todos.map(d => {
       return (<Item name={d.name} email={d.email} checked={d.checked}/>)
     })
    
@@ -60,7 +70,7 @@ class App extends Component{
     return (
       <div className="App">
         <header className="App-header">
-          <h1 style = {styles}>is {varss} going to learn react? hopefully {this.state.answer}</h1>
+          <h1 style = {styles}>is {varss} going to learn react? hopefully {vafr}</h1>
           <Item name="placeholder" lastname="kek"/> 
           {datacomp}
           {/* name is the first prop */}

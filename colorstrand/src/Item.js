@@ -17,7 +17,7 @@ class Item extends React.Component{
     render() {
         return(
             <div>
-            <input type= "checkbox" checked = {this.props.checked}/>
+            <input type= "checkbox" checked = {this.props.checked} onChange={()=> console.log("henlo")}/>
             <p style = {{color: this.props.email ? "red" : "black"}}> Name: {this.props.name}</p>
             <p style = {{display: this.props.email ? "block" : "none"}}> Email: {this.props.email}</p>
             
